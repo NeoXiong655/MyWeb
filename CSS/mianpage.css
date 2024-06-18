@@ -2,35 +2,34 @@
 .parent {
     display: grid;
     grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 13px;
-    grid-row-gap: 26px;
+    grid-template-rows: 0.5fr repeat(4, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
     }
     
-    .div1 { grid-area: 1 / 2 / 2 / 5; }
-    .div2 { grid-area: 2 / 2 / 6 / 4; }
-    .div3 { grid-area: 2 / 4 / 6 / 5; }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
+    .div1 { grid-area: 2 / 3 / 3 / 4; 
+        font-size: 4rem;
+        font-weight: bold;
+        color: brown;
+        text-align:center;
+        font-family:"Times New Roman", Times, serif;}
+    .div2 { grid-area: 3 / 3 / 4 / 4;
+        font-size: 2rem;
+        
+        color: brown;
+        text-align:center;
+        font-family:"Times New Roman", Times, serif; }
+    .div3 { grid-area: 4 / 3 / 5 / 4; 
+        
+        font-size: 1rem;
+        color: brown;
+        text-align:center;
+        font-family:"Times New Roman", Times, serif;}
+        html{
     
-    li {
-        float: left;
-    }
+            background-image: url('../image/backimg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
     
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: #111;
-    }

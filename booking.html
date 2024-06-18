@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet"  type="text/css"  href="CSS/main.css" >
+    <meta charset="UTF-8">
+    <title>Final</title>
+</head>
+<header>
+   
+        <nav><ul>
+            <li><a href="Mainpage.html" >Neo Xiong</a></li>
+            <li>
+                <div class="dropdownact"> <a href="#" class="dropbtn">In-Class Porject</a>
+                    <div class="dropdown-content"> <a href="aud.html">Audacity</a> <a href="gimp.html">Gimp</a> <a href="table.html">Web design</a> <a href="booking.html">Booking webpage</a> </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown"> <a href="#" class="dropbtn">Off-Class Porject</a>
+                    <div class="dropdown-content"> <a href="MCGP.html">MCGP</a> <a href="model.html">Mur Studio</a> <a href="mod.html">End field</a> </div>
+                </div>
+            </li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+        </nav>
+</header>
+<body>
+    
+        <form action= "submit.html" method = "post" required>
+            <fieldset>
+            <legend>Order Information </legend>
+            <label for = "name">Name: </label>
+            <input id = "name" type = "text" value="Neo">
+            <label for = "namemodel">Name of the Model: </label>
+            <input id = "namemodel" type = "text" value="Airplane">
+            <label for = "discription">What is the Model look like: </label>
+            <input id = "namemodel" type = "text" value="White, has wings, can fly.">
+            <label for = "positionoption">Which version:</label></br>
+                <input id = "positionoption" name = "version"type = "radio"> Java </input>
+                <input id = "positionoption" name = "version"type = "radio"> BedRock </input>
+                <input id = "positionoption" name = "version"type = "radio"> Free Model </input>
+
+            </fieldset>
+            <fieldset><legend>Model</legend>
+            <label for = "cube"> Complexity </label></br>
+                <input id = "cube" name = "cube"type = "radio"> 0~100 cube </input></br>
+                <input id = "cube" name = "cube"type = "radio"> 100~200 cube </input></br>
+                <input id = "cube" name = "cube"type = "radio"> 200~400 cube </input></br>
+                <input id = "cube" name = "cube"type = "radio"> 400~600 cube </input></br>
+                <input id = "cube" name = "cube"type = "radio"> 600~1000 cube </input></br>
+                <input id = "cube" name = "cube"type = "radio"> 1000~1500 cube </input></br>
+                <input id = "cube" name = "cube"type = "radio"> 1500+ cube </input></br>
+            
+            </fieldset>
+            <fieldset><legend> Texture</legend>
+            <label for = "texture"> Basic </label></br>
+                <input id = "texture" name = "texture"type = "radio"> Single color </input></br>
+                <input id = "texture" name = "texture"type = "radio"> Multiple color </input></br>
+                <input id = "texture" name = "texture"type = "radio"> Multiple color with shadow </input></br>
+                <input id = "texture" name = "texture"type = "radio"> Complex Texture </input></br>
+                <input id = "texture" name = "texture"type = "radio"> None </input></br>
+                <label for = "moretexture">More Texture options</label></br>
+                <input id = "moretexture" name = "moretexture" type = "checkbox"> Texture with outline cube</input></br>
+                <input id = "moretexture" name = "moretexture" type = "checkbox"> Texture with light</input></br>
+                <input id = "moretexture" name = "moretexture" type = "checkbox"> Texture with more than one layer</input></br>
+            </fieldset>
+            <fieldset>
+            <legend> Animation</legend>
+            <label for = "anime"> Choose Movement</label></br>
+                <select id = "anime"> 
+                    <optgroup label = "Creature">
+                    <option value = "at"> Attack </option>
+                    <option value = "df"> Defence </option>
+                    <option value = "run"> Run </option>
+                    <option value = "jum"> Jump </option>
+                    </optgroup>
+                    <optgroup label = "Veichle">
+                    <option value = "running"> Running</option>
+                    <option value = "fly"> Flying </option>
+                    <option value = "turn"> Turn right or turn left</option>
+                    <option value = "break"> Break </option>
+                    </optgroup>
+    
+                    <optgroup label = "other">
+                    <option value = "other"> Other </option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <input class = "submit" type = "Submit" value = "Place order">
+            </form>
+                
+
+</body>
+</html>

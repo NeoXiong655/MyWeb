@@ -1,0 +1,26 @@
+html{
+    
+    background-image: url('../image/cool-background\ \(3\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 200px 200px 824px 128px;
+    grid-template-rows: 100px 200px 100px 200px 100px;
+    
+    }
+    
+    .div1 { grid-area: 2 / 2 / 3 / 3; }
+    .div2 { grid-area: 2 / 3 / 3 / 5; font-size: 6rem;
+        color: rgb(194, 167, 136);
+        font-family:"Times New Roman", Times, serif;}
+    .div3 { grid-area: 3 / 2 / 4 / 5; }
+    .div4 { grid-area: 4 / 2 / 5 / 5; font-size: 1rem;
+        color: rgb(239, 221, 200);
+        
+        font-family:"Times New Roman", Times, serif; }
+
+
+

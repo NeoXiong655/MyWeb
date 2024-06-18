@@ -1,0 +1,103 @@
+<head>
+    <link rel="stylesheet"  type="text/css"  href="CSS/mianpage.css" >
+    <link rel="stylesheet"  type="text/css"  href="CSS/main.css" >
+    <meta charset="UTF-8">
+    <title>Final</title>
+</head>
+<header>
+    <h1>Home Page</h1>
+    <nav>
+        <nav><ul>
+            <li><a href="Mainpage.html" >Neo Xiong</a></li>
+            <li>
+                <div class="dropdownact"> <a href="#" class="dropbtn">In-Class Porject</a>
+                    <div class="dropdown-content"> <a href="aud.html">Audacity</a> <a href="gimp.html">Gimp</a> <a href="table.html">Web design</a> <a href="booking.html">Booking webpage</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown"> <a href="#" class="dropbtn">Off-Class Porject</a>
+                    <div class="dropdown-content"> <a href="MCGP.html">MCGP</a> <a href="model.html">Mur Studio</a> <a href="mod.html">End field</a> </div>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </nav>
+</header>
+<body>
+
+    <script language="JavaScript" type="text/javascript">
+  
+        var Version;
+        Total =prompt("How Many Model Do You Need?","1");
+        Version = prompt("Enter which version: 1.Java  2.BedRock  3.Free","2");
+        NumBlock = prompt("Enter how complex is the model(the number of cube) ","200");
+        Texture = prompt("Enter how Complex is the Texture:0. None 1.One color 2.color with shadow 3.color with texture ","2");
+        Animations = prompt("Enter do you need animation: 1.Yes 2.No","1");
+        Total = parseInt(Total );
+        Version = parseInt( Version);
+        NumBlock = parseInt( NumBlock);
+        Texture = parseInt( Texture);
+        Animations = parseInt( Animations);
+        if (Animations ==0) {
+            Animationscount= 0;
+            Animationscount= parseInt(Animationscount );
+            var Animationsr = 0;
+        }
+        if (Animations ==1) {
+            Animationscount = prompt("Enter How Much Animation Do You need?","3");
+            Animationscount= parseInt(Animationscount );
+            var Animationsr = (Animationscount *10);
+        } 
+        if ( Version==1) {
+            var Versionr=30;
+            var Versions="Java";
+        }
+        if ( Version==2) {
+            var Versionr=25;
+            var Versions="BedRock";
+        }
+        if ( Version==3) {
+            var Versionr=35;
+            var Versions="Free";
+        }
+        if(Texture ==0 ){
+            var Textures=" None";
+        }
+        if(Texture == 1){
+            var Textures=" One color";
+        }
+        if(Texture == 2){
+            var Textures=" color with shadow";
+        }
+        if(Texture == 3){
+            var Textures=" color with texture";
+        }
+        
+        var NumBlockr = NumBlock *0.1;
+        var Texturer = Texture * 10;
+        var Totalr =  (NumBlockr + Texturer +Versionr+Animationsr)*Total;
+        var data=[
+            {name:"Version",Versions,Versionr},
+            {name:"NumBlock", NumBlock,NumBlockr},
+            {name:"Texture",Textures,Texturer},
+            {name:"Animations",Animationscount,Animationsr},
+            {name:"Total",Total,Totalr},
+           
+        ];
+ 
+        var table="<table border='1' cellspacing='1'>";
+        for(var i=0;i<10;i++) {
+            table += "<tr>";
+            for (var key in data[i]){
+                table = table+"<td>"+data[i][key]+"</td>";
+            }
+                table+="</tr>";
+        }
+        table+="</table>";
+        var bodys = document.getElementsByTagName('body')[0];
+        bodys.innerHTML = table;  
+        </script>
+        <li><a href ="table.html" class="back"> Back </a></li>
+        </body>
+      </html>
