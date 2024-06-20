@@ -1,6 +1,6 @@
 html{
     
-    background-image: url('../image/cool-background\ \(3\).png');
+    background-image: url('../image/cool-background\ \(4\).png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12,15 +12,33 @@ html{
     
     }
     
-    .div1 { grid-area: 2 / 2 / 3 / 3; }
+    .div1 { grid-area: 2 / 2 / 3 / 3;
+        vertical-align: middle; 
+        align-content: center;
+        backdrop-filter: blur(15px);}
     .div2 { grid-area: 2 / 3 / 3 / 5; font-size: 6rem;
         color: rgb(194, 167, 136);
+        align-content: center;
+        backdrop-filter: blur(15px);
         font-family:"Times New Roman", Times, serif;}
     .div3 { grid-area: 3 / 2 / 4 / 5; }
+    
     .div4 { grid-area: 4 / 2 / 5 / 5; font-size: 1rem;
         color: rgb(239, 221, 200);
-        
+        align-content: center;
+        backdrop-filter: blur(15px);
         font-family:"Times New Roman", Times, serif; }
 
+.div4:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: inherit;
+    
+    z-index: 2;
 
+}
 
